@@ -11,7 +11,6 @@ function App() {
     <React.Fragment>
       <Header />
       <CoffeeControl/>
-      {/* <CoffeeInventory /> */}
     </React.Fragment>
   );
 }
