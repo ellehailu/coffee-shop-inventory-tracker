@@ -9,10 +9,11 @@ class CoffeeControl extends React.Component{
             formVisibleOnPage: false,
             mainCoffeeList: []
         };
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick = () => {
-        this.state(prevState => ({
+    handleClick(){
+        this.setState(prevState => ({
             formVisibleOnPage: !prevState.formVisibleOnPage
         }));
     }

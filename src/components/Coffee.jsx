@@ -5,9 +5,9 @@ function Coffee(props){
     return (
         <React.Fragment>
             <h3>{props.type} - {props.name}</h3>
-            <h2>Origin: {props.origin}</h2>
-            <h2>Roast: {props.roast}</h2>
-            <h2>Price: ${props.price}</h2>
+            <h4>Origin: {props.origin}</h4>
+            <h4>Roast: {props.roast}</h4>
+            <h4>Price: ${props.price}</h4>
         </React.Fragment>
     )
 }

@@ -7,6 +7,7 @@ function NewCoffeeForm(props){
         event.preventDefault();
         props.onNewCoffeeCreation({
             type: event.target.type.value,
+            name: event.target.name.value,
             origin: event.target.origin.value,
             roast: event.target.roast.value,
             price: event.target.price.value,
@@ -25,6 +26,11 @@ function NewCoffeeForm(props){
                     type="text"
                     name="type"
                     placeholder="type of coffee"
+                />
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="name of coffee"
                 />
                 <input
                     type="text"

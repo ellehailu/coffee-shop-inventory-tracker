@@ -8,6 +8,7 @@ function CoffeeInventory(props){
         <React.Fragment>
             {props.coffeeList.map((coffee, index) => 
             <Coffee type={coffee.type}
+                name={coffee.name}
                 origin={coffee.origin}
                 roast={coffee.roast}
                 price={coffee.price}
