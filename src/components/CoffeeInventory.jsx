@@ -3,9 +3,21 @@ import Coffee from "./Coffee";
 import PropTypes from "prop-types";
 
 
-function CoffeeInventory(){
+function CoffeeInventory(props){
     return(
-        <Coffee />
-    );
+        <React.Fragment>
+            {props.coffeeList.map((coffee, index) => 
+            <Coffee type={coffee.type}
+                origin={coffee.origin}
+                roast={coffee.roast}
+                price={coffee.price}
+                key={index}
+            />)}
+        </React.Fragment>
+    )
 }
-export default CoffeeInventory;
+
+CoffeeInventory.propTypes = {
+    coffeeList: PropTypes.array
+};
+export default CoffeeInventory
