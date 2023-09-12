@@ -1,6 +1,5 @@
 import React from "react";
 import Coffee from "./Coffee";
-import CoffeeDetail from "./CoffeeDetail";
 import PropTypes from "prop-types";
 
 
