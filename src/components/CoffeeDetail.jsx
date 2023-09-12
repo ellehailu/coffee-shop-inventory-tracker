@@ -6,19 +6,22 @@ function CoffeeDetail(props){
 
     return (
         <React.Fragment>
+            
+            <h2>Coffee Detail</h2>
             <div className="detail">
-            <h1>Coffee Detail</h1>
-            <h3>Type: {coffee.type}</h3>
-            <h3>Name: {coffee.name}</h3>
+            <h4>Type: {coffee.type}</h4>
+            <h4>Name: {coffee.name}</h4>
             <h4>Origin: {coffee.origin}</h4>
             <h4>Roast: {coffee.roast}</h4>
             <h4>Price: ${coffee.price}</h4>
+            
             <h4>Amount available: {coffee.amountAvailable}lbs</h4>
+            </div>
             <button onClick={props.onClickingEdit }>Update Coffee</button>
             <button onClick={() => onClickingDelete(coffee.id)}>Delete Coffee</button>
             <button onClick={props.onClickingSell}>sell coffee</button>
             <hr/>
-            </div>  
+              
         </React.Fragment>
     )
 }

@@ -22,6 +22,7 @@ body {
   border: 10%;
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {
@@ -29,13 +30,7 @@ h1 {
   line-height: 1.1;
 }
 
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -60,7 +55,7 @@ button:focus-visible {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px gray solid;
+  background-color: #c6c6c6;
 }
 
 .detail button {
