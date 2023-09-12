@@ -55,9 +55,10 @@ class CoffeeControl extends React.Component {
 
     handleSale = (id) =>{
       const coffeeToSell = this.state.mainCoffeeList.find(coffee => coffee.id === id);
-        coffeeToSell.amountAvailable = coffeeToSell.amountAvailable - 1;
+        if (coffeeToSell.amountAvailable > 0){
+          coffeeToSell.amountAvailable = coffeeToSell.amountAvailable - 1;
         this.setState({coffeeToSell})
-      
+        }
     }
   
     handleAddingNewCoffeeToList = (newCoffee) => {
