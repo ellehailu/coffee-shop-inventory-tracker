@@ -6,6 +6,7 @@ function CoffeeDetail(props){
 
     return (
         <React.Fragment>
+            <div className="detail">
             <h1>Coffee Detail</h1>
             <h3>Type: {coffee.type}</h3>
             <h3>Name: {coffee.name}</h3>
@@ -16,8 +17,8 @@ function CoffeeDetail(props){
             <button onClick={props.onClickingEdit }>Update Coffee</button>
             <button onClick={() => onClickingDelete(coffee.id)}>Delete Coffee</button>
             <button onClick={props.onClickingSell}>sell coffee</button>
-            {/* <button onClick={props.handleSale(coffee.id)}>Sell Coffee</button> */}
             <hr/>
+            </div>  
         </React.Fragment>
     )
 }
@@ -27,7 +28,6 @@ CoffeeDetail.propTypes = {
     onClickingDelete: PropTypes.func,
     onClickingEdit: PropTypes.func,
     onClickingSell: PropTypes.func
-    // handleSale: PropTypes.func
 
 };
 

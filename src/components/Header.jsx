@@ -3,7 +3,7 @@ import React from "react";
 function Header(){
     return(
         <React.Fragment>
-            <h1>Coffee Shop Inventory Tracker</h1>
+            <h2>Coffee Shop Inventory Tracker</h2>
         </React.Fragment>
     )
 }

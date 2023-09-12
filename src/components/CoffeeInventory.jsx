@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 function CoffeeInventory(props){
     return(
         <React.Fragment>
+            <div className="detail">
             {props.coffeeList.map((coffee) => 
             <Coffee 
                 whenCoffeeClicked = { props.onCoffeeSelection }
@@ -19,6 +20,7 @@ function CoffeeInventory(props){
                 id={coffee.id}
                 key={coffee.id} />
             )}
+            </div>
         </React.Fragment>
     )
 }
