@@ -15,6 +15,7 @@ function CoffeeInventory(props){
                 origin={coffee.origin}
                 roast={coffee.roast}
                 price={coffee.price}
+                amountAvailable={coffee.amountAvailable}
                 id={coffee.id}
                 key={coffee.id} />
             )}
