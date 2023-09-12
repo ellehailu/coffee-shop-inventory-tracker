@@ -20,7 +20,7 @@
 
 ## Known Bugs
 
-- The user is not able to "sell" any coffee. 
+- The user is not able to "sell" coffee. 
 
 ## License
 
