@@ -1,6 +1,6 @@
 #### By **Elle Hailu**
 
-(CoffeeTracker.png)
+![Components Diagram](CoffeeTracker.png)
 
 #### _A web application to track coffee inventory_
 
