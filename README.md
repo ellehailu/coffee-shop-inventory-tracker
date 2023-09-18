@@ -1,5 +1,7 @@
 #### By **Elle Hailu**
 
+(CoffeeTracker.png)
+
 #### _A web application to track coffee inventory_
 
 ## Technologies Used
